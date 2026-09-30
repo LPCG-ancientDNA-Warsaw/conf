@@ -1,0 +1,17 @@
+global:
+    Lane: 1
+    Colour_Chemistry: 2
+    SeqType: PE
+    Organism: NA
+    Strandedness: single
+    UDG_Treatment: half
+    sample_id_regex: "^([A-Za-z]+\\d+)"
+    library_id_regex: "^(.*?)_R[12]_\\d+$"
+
+projects:
+    human:
+        Organism: homo_sapiens
+        udg_regex: "(hlf|udg)_"
+        udg_mapping:
+            hlf: half
+            udg: full
